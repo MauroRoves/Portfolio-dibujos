@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background:  rgb(166, 209, 223);
+}
+
+div {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+nav {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+h1 { 
+
+    color: rgb(245, 245, 245);   
+}
+
+
+h2 { 
+
+    color: rgb(245, 245, 245);
+    
+}
+
+li {
+    list-style-type: none;
+}
+
+
+
+/* Desktop */
+
+
+
+/* INDEX */
+
+.gridContainer {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+    grid-template-columns: 15% 30% 30% 15%;
+    grid-template-rows: 20% 70% 10%;
+    margin: 20px auto;
+    min-width: 768px;
+    justify-content: center;
+
+}
+    
+
+/*HEADER*/
+
+
+.header {
+    grid-area: header;
+    justify-content: center;
+    padding: 40px 0px 20px 0px;
+    background-color: black;
+}
+
+h1, h2 {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display:flex;
+    flex-direction: row;
+    margin-top: 20px;
+    padding-left: 0;
+
+} 
+
+nav ul li {
+    background-color: rgb(61, 60, 60);
+    padding: 5px;
+    display:flex;
+
+}
+
+li a {
+
+    color:  rgb(245, 245, 245);
+    text-decoration: none; 
+    text-transform: uppercase;
+}
+
+/* MAIN */
+
+.main {
+    grid-area: main;
+}
+
+.containerTexto {
+    background-color: red;
+    text-align: center;
+    font-size: 1.2rem;
+    border-style: solid;
+}
+
+.containerImg {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.imagenInicio {
+    border-width: 5px;
+    width: 1000px;
+    height: 600px;
+    border-style: solid;
+    
+}
+
+.imagenGaleria {
+    border-width: 5px;
+    width: 480px;
+    height: 640px;
+    border-style: solid;
+}
+
+.imagenGaleria__Horizontal {
+    border-width: 5px;
+    width: 640px;
+    height: 480px;
+    border-style: solid; 
+
+}
+
+.footer__img {
+    max-height: 40px;
+}
+
+
+.titulosNegro {
+    font-size: 2.5rem;
+    color: rgb(7, 7, 7);
+    text-align: center;
+}
+
+
+
+
+
