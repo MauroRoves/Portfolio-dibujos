@@ -34,30 +34,16 @@ li {
     list-style-type: none;
 }
 
-
-
-/* Desktop */
-
-
-
-/* INDEX */
-
-.gridContainer {
-    display: grid;
-    grid-template-areas: 
-    "header header header header"
-    "main main main main"
-    "footer footer footer footer";
-    grid-template-columns: 15% 30% 30% 15%;
-    grid-template-rows: 20% 70% 10%;
-    margin: 20px auto;
-    min-width: 768px;
-    justify-content: center;
-
+.fondo-img {
+    background-image: url(../imagenes/fondo.jpg);
 }
+
+
+
+
     
 
-/*HEADER*/
+
 
 
 .header {
@@ -84,6 +70,7 @@ nav ul li {
     background-color: rgb(61, 60, 60);
     padding: 5px;
     display:flex;
+    position: relative;
 
 }
 
@@ -92,6 +79,21 @@ li a {
     color:  rgb(245, 245, 245);
     text-decoration: none; 
     text-transform: uppercase;
+}
+
+nav ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;    
+}
+
+nav ul li:hover::before {
+    width: 100%;
 }
 
 /* MAIN */
