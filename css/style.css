@@ -38,21 +38,6 @@ li {
     background-image: url(../imagenes/fondo.jpg);
 }
 
-
-
-
-    
-
-
-
-
-.header {
-    grid-area: header;
-    justify-content: center;
-    padding: 40px 0px 20px 0px;
-    background-color: black;
-}
-
 h1, h2 {
     display: flex;
     justify-content: center;
@@ -85,7 +70,7 @@ nav ul li::before {
     content: "";
     height: 3px;
     width: 0%;
-    background: yellow;
+    background: rgb(243, 227, 6);
     position: absolute;
     left: 0;
     bottom: -12px;
@@ -96,60 +81,11 @@ nav ul li:hover::before {
     width: 100%;
 }
 
-/* MAIN */
-
-.main {
-    grid-area: main;
-}
-
-.containerTexto {
-    background-color: red;
-    text-align: center;
-    font-size: 1.2rem;
-    border-style: solid;
-}
-
-.containerImg {
-    background-color: blue;
-    display: flex;
-    justify-content: center;
-
-
-}
-
-.imagenInicio {
-    border-width: 5px;
-    width: 1000px;
-    height: 600px;
-    border-style: solid;
-    
-}
-
-.imagenGaleria {
-    border-width: 5px;
-    width: 480px;
-    height: 640px;
-    border-style: solid;
-}
-
-.imagenGaleria__Horizontal {
-    border-width: 5px;
-    width: 640px;
-    height: 480px;
-    border-style: solid; 
-
-}
-
 .footer__img {
     max-height: 40px;
 }
 
 
-.titulosNegro {
-    font-size: 2.5rem;
-    color: rgb(7, 7, 7);
-    text-align: center;
-}
 
 
 
